@@ -10,9 +10,21 @@ Semantic offers complete design freedom. High level variables and an intuitive i
   
 * In your distribution config file `config/distribution.php` set the value of `public_theme` to `Websemantics\SemanticuiTheme\SemanticuiTheme`
 
-* Go to `addons/default/websemantics/semanticui-theme/resources/build/` folder and run the bash file `./build.sh`. This will compile install node modules, compile semantic-ui and copy css, js etc files to the respective theme folders (css, js, fonts etc). You might be prompted to enter the root password.
+* Go to `addons/default/websemantics/semanticui-theme/resources/build/` folder and run the bash file `./build.sh`. This will install all the required node modules, compile semantic-ui and copy css, js etc files to the respective theme folders (css, js, fonts etc). You might be prompted to enter the root password.
 
-* To override the theme, write your styles in prompted `addons/default/websemantics/semanticui-theme/resources/build/semantic-site`
+* To override the theme, write your styles in `addons/default/websemantics/semanticui-theme/resources/build/semantic-site`, then re-run `addons/default/websemantics/semanticui-theme/resources/build/build.sh`
+
+* Link your views to the theme layout,   
+
+```
+{% extends "theme::layouts/default" %}
+
+{% block content %}
+
+<div> CONTENT </div>
+
+{% endblock %}
+```
 
 * Enjoy
 
