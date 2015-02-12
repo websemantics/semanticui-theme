@@ -1,0 +1,34 @@
+{
+    "name": "websemantics/semanticui-theme",
+    "type": "streams-addon",
+    "description": "Semantic offers complete design freedom. High level variables and an intuitive inheritance system lets you change the look and feel of your components with just a handful of lines",
+    "keywords": ["theme", "pyrocms", "laravel"],
+    "homepage": "http://websemantics.ca",
+    "version": "1.0.0-alpha",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Web Semantics, Inc.",
+            "email": "hi@websemantics.ca",
+            "homepage": "http://websemantics.ca",
+            "role": "Owner"
+        }
+    ],
+    "support": {
+        "email": "hi@websemantics.ca"
+    },
+    "config": {
+        "bin-dir": "bin"
+    },
+    "autoload": {
+        "psr-4": {
+            "Websemantics\\SemanticuiTheme\\": "src/"
+        }
+    },
+    "extra": {
+        "branch-alias": {
+            "dev-master": "1.0.x-dev"
+        }
+    },
+    "minimum-stability": "dev"
+}

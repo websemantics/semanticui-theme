@@ -1,0 +1,29 @@
+<!doctype html>
+
+<!--[if lt IE 7]>
+<html class="nojs ms lt_ie7" lang="en"><![endif]-->
+<!--[if IE 7]>
+<html class="nojs ms ie7" lang="en"><![endif]-->
+<!--[if IE 8]>
+<html class="nojs ms ie8" lang="en"><![endif]-->
+<!--[if gt IE 8]>
+<html class="nojs ms" lang="en"><![endif]-->
+
+<html>
+
+<head>
+    {% include "theme::partials/metadata" %}
+</head>
+
+<body>
+
+{% include "theme::partials/header" %}
+
+<section id="main" class="container-fluid">
+    {{ block('content') }}
+</section>
+
+{% include "theme::partials/footer" %}
+
+</body>
+</html>

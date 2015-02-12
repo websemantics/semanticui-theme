@@ -1,0 +1,41 @@
+/*
+ * # iBuild - 0.1
+ * https://ibuild.io
+ * http://www.websemantics.ca/
+ *
+ * Copyright 2015 Contributors
+ *
+ * Adnan Sagar @ 2 Feb 2015
+ *
+ */
+
+/*
+	This will fix the path for the font and images to work with PyroCMS assets.
+ */
+
+/*******************************
+             Icon
+*******************************/
+
+@font-face {
+  font-family: 'Icons';
+  src: url('../../../{{ asset_path("theme::fonts/semantic-ui/icons.eot") }}');
+  src: url('../../../{{ asset_path("theme::fonts/semantic-ui/icons.eot?#iefix") }}') format('embedded-opentype'), url('../../../{{ asset_path("theme::fonts/semantic-ui/icons.svg#icons") }}') format('svg'), url('../../../{{ asset_path("theme::fonts/semantic-ui/icons.woff") }}') format('woff'), url('../../../{{ asset_path("theme::fonts/semantic-ui/icons.ttf") }}') format('truetype');
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-decoration: inherit;
+  text-transform: none;
+}
+
+/*******************************
+             Flags
+*******************************/
+
+i.flag:not(.icon):before {
+  display: inline-block;
+  content: '';
+  background: url('../../../{{ asset_path("theme::img/semantic-ui/flags.png") }}') no-repeat 0px 0px;
+  width: 16px;
+  height: 11px;
+}
