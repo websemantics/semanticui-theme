@@ -14,7 +14,7 @@ Semantic offers complete design freedom. High level variables and an intuitive i
 
 * To override the theme, write your styles in `addons/default/websemantics/semanticui-theme/resources/build/semantic-site`, then re-run `addons/default/websemantics/semanticui-theme/resources/build/build.sh`
 
-* Link your views to the theme layout,   
+* Link your views to the theme layout, i.e. `addons/default/websemantics/some-module/resources/views/index.twig`
 
 ```
 {% extends "theme::layouts/default" %}
